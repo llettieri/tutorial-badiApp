@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">tutorial-badiApp</string>
+    <string name="pool">Pool</string>
 </resources>
