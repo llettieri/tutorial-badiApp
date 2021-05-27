@@ -11,7 +11,7 @@ import ch.bbcag.tutorial_badiapp.model.OutdoorPool;
 public class HowWarmJsonParser {
     public static OutdoorPool createOutdoorPoolFromJsonString(String outdoorPoolJsonString) throws JSONException {
         OutdoorPool outdoorPool = new OutdoorPool();
-        JSONObject jsonObj = new JSONObject();
+        JSONObject jsonObj = new JSONObject(outdoorPoolJsonString);
 
         outdoorPool.setId(Integer.parseInt(jsonObj.getString("badid")));
         outdoorPool.setName(jsonObj.getString("badname"));

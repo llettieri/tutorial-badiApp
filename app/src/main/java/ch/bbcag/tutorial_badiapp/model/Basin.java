@@ -4,6 +4,11 @@ public class Basin {
     private String name;
     private double temp;
 
+    @Override
+    public String toString() {
+        return name + " " + temp + "°C";
+    }
+
     public String getName() {
         return name;
     }

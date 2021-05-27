@@ -21,6 +21,11 @@ public class OutdoorPool {
         this.canton = canton;
     }
 
+    @Override
+    public String toString() {
+        return name + " " + location + " (" + canton + ")";
+    }
+
     public int getId() {
         return id;
     }
